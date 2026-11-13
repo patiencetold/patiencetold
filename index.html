@@ -442,7 +442,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
       <div class="logo-disc"><img src="logo.png" alt="Patience Told."></div>
       <div class="hero-side">
         <div class="tile">
-          <img class="fr on" src="frames/v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
+          <img class="fr on" src="v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
           <span class="tag">Featured</span>
           <span class="play">Play with sound</span>
           <button class="hit" type="button" data-play="0" aria-label="Play Mamz, Blurry / House with sound"></button>
@@ -473,7 +473,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
       <li>
         <span class="num">01</span>
         <div class="tile">
-          <img class="fr on" src="frames/v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
+          <img class="fr on" src="v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
           <span class="play">Play with sound</span>
           <button class="hit" type="button" data-play="0" aria-label="Play Mamz, Blurry / House with sound"></button>
         </div>
@@ -485,7 +485,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
             <a href="https://youtu.be/TB2q0LTzim8" target="_blank" rel="noopener">Watch on YouTube ↗</a>
           </div>
           <div class="tile extra">
-            <img class="fr on" src="frames/v4_cover.jpg" alt="Still from the Blurry / House behind the scenes teaser" width="768" height="432" data-seq="4">
+            <img class="fr on" src="v4_cover.jpg" alt="Still from the Blurry / House behind the scenes teaser" width="768" height="432" data-seq="4">
             <span class="tag">Behind the scenes</span>
             <button class="hit" type="button" data-play="4" aria-label="Play the Blurry / House behind the scenes teaser"></button>
           </div>
@@ -495,7 +495,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
       <li>
         <span class="num">02</span>
         <div class="tile">
-          <img class="fr on" src="frames/v1_1.jpg" alt="Still from Mamz, TANA" width="768" height="432" data-seq="1">
+          <img class="fr on" src="v1_1.jpg" alt="Still from Mamz, TANA" width="768" height="432" data-seq="1">
           <span class="play">Play with sound</span>
           <button class="hit" type="button" data-play="1" aria-label="Play Mamz, TANA with sound"></button>
         </div>
@@ -507,7 +507,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
             <a href="https://youtu.be/1lY-K7u6tsA" target="_blank" rel="noopener">Watch on YouTube ↗</a>
           </div>
           <div class="tile extra">
-            <img class="fr on" src="frames/v5_cover.jpg" alt="Still from the TANA making of" width="768" height="432" data-seq="5">
+            <img class="fr on" src="v5_cover.jpg" alt="Still from the TANA making of" width="768" height="432" data-seq="5">
             <span class="tag">Making of</span>
             <button class="hit" type="button" data-play="5" aria-label="Play the TANA making of"></button>
           </div>
@@ -525,7 +525,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
     <div class="life">
       <div class="reel">
         <div class="tile">
-          <img class="fr on" src="frames/v2_1.jpg" alt="Still from New York City, a visual" width="768" height="432" data-seq="2">
+          <img class="fr on" src="v2_1.jpg" alt="Still from New York City, a visual" width="768" height="432" data-seq="2">
           <span class="play">Play</span>
           <button class="hit" type="button" data-play="2" aria-label="Play New York City, a visual"></button>
         </div>
@@ -535,7 +535,7 @@ footer a:hover,footer button:hover{color:var(--paper)}
       </div>
       <div class="reel">
         <div class="tile">
-          <img class="fr on" src="frames/v3_1.jpg" alt="Still from AlUla, a visual" width="768" height="432" data-seq="3">
+          <img class="fr on" src="v3_1.jpg" alt="Still from AlUla, a visual" width="768" height="432" data-seq="3">
           <span class="play">Play</span>
           <button class="hit" type="button" data-play="3" aria-label="Play AlUla, a visual"></button>
         </div>
@@ -942,7 +942,7 @@ function pageUrl(v) { return v.type === "yt" ? "https://www.youtube.com/watch?v=
 function siteName(v) { return v.type === "yt" ? "YouTube" : "Instagram"; }
 
 // Thumbnails: each tile shows one real frame. Hovering plays a short muted preview clip of that video
-// (clips/v0.mp4 to clips/v5.mp4). On touch screens, where there is no hover, the clip plays while the tile is on screen.
+// (v0.mp4 to v5.mp4). On touch screens, where there is no hover, the clip plays while the tile is on screen.
 var consent = "yes";
 var viewer = document.getElementById("viewer"), frame = document.getElementById("vFrame"),
     iframe = document.getElementById("vIframe"), current = 0, lastFocus = null;
@@ -956,7 +956,7 @@ document.querySelectorAll(".tile img.fr").forEach(function (still) {
     v.setAttribute("muted", ""); v.setAttribute("playsinline", ""); v.setAttribute("aria-hidden", "true");
     v.addEventListener("error", function () { s.missing = true; v.remove(); s.video = null; });
     v.addEventListener("playing", function () { if (s.want) v.classList.add("on"); });
-    v.src = "clips/v" + still.dataset.seq + ".mp4";
+    v.src = "v" + still.dataset.seq + ".mp4";
     tile.insertBefore(v, still.nextSibling); s.video = v;
   }
   s.start = function () {
