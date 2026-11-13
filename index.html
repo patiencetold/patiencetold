@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patience Told | Music Video Production in Montréal</title>
+<meta name="description" content="Patience Told is a Montréal creative company making music videos and visuals for artists. Direction, videography, production and design by Karim Elnaggar. Open to collabs.">
+<link rel="canonical" href="https://patiencetold.com/">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Patience Told">
+<meta property="og:title" content="Patience Told | Music Video Production in Montréal">
+<meta property="og:description" content="Music videos and visuals for artists, made in Montréal. Direction, videography, production and design.">
+<meta property="og:url" content="https://patiencetold.com/">
+<meta property="og:image" content="https://patiencetold.com/logo.png">
+<meta property="og:locale" content="en_CA">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Patience Told",
+  "url": "https://patiencetold.com/",
+  "logo": "https://patiencetold.com/logo.png",
+  "image": "https://patiencetold.com/logo.png",
+  "description": "Creative company in Montréal making music videos and visuals for artists. Direction, videography, production and design.",
+  "email": "karim@patiencetold.com",
+  "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" },
+  "areaServed": [{ "@type": "City", "name": "Montréal" }, { "@type": "AdministrativeArea", "name": "Québec" }],
+  "founder": { "@type": "Person", "name": "Karim Elnaggar", "jobTitle": "Director and Editor" },
+  "knowsAbout": ["Music video production", "Videography", "Video direction", "Video editing", "Creative direction", "Design"],
+  "sameAs": ["https://www.instagram.com/patiencetold/", "https://www.instagram.com/onlykarimhere/"]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@125,800;125,900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: screen-print poster. Black and white bands alternate; one accent colour on small details only. Halftone dots are the only texture. */
+  --ink:#000;
+  --paper:#fff;
+  /* The one accent. Change this line to recolour the whole site. */
+  --accent:#e8112d;
+  --rule-on-dark:rgba(255,255,255,.24);
+  --rule-on-light:rgba(0,0,0,.2);
+  --mute-on-dark:rgba(255,255,255,.7);
+  --mute-on-light:rgba(0,0,0,.62);
+  --display:"Archivo","Arial Black","Helvetica Neue",sans-serif;
+  --mono:"DM Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  /* Side margin; past 1360px of content the page stops widening and centres. */
+  --gutter:max(clamp(20px,4.5vw,64px),calc(50vw - 680px));
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:52px}
+body{margin:0;font-stretch:125%;background:var(--paper);color:var(--ink);font-family:var(--mono);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,canvas{max-width:100%;display:block}
+a{color:inherit}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+.label{font-size:12px;letter-spacing:.14em;text-transform:uppercase;margin:0}
+
+/* Header */
+.top{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px var(--gutter);background:var(--ink);color:var(--paper)}
+.top a{text-decoration:none}
+.brand{font-family:var(--display);font-weight:900;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.brand i{font-style:normal;color:var(--accent)}
+.top nav{display:flex;gap:clamp(12px,2.6vw,30px)}
+.top nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:5px 0;border-bottom:1px solid transparent}
+.top nav a:hover{border-bottom-color:var(--accent);color:var(--accent)}
+
+/* Hero */
+.hero{padding:calc(52px + clamp(32px,5vw,72px)) var(--gutter) clamp(56px,7vw,104px);display:flex;flex-direction:column;gap:clamp(32px,4.5vw,64px)}
+.name{margin:0;font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(30px,8.6vw,160px);line-height:.9;letter-spacing:-.015em}
+.name i{font-style:normal;color:var(--accent)}
+.role-row{display:flex;justify-content:space-between;align-items:baseline;gap:12px 32px;flex-wrap:wrap;border-top:3px solid var(--ink);padding-top:14px;margin-top:clamp(12px,1.6vw,22px)}
+.role{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(13px,1.35vw,19px);line-height:1.2;margin:0;display:flex;gap:4px 14px;flex-wrap:wrap}
+.role span{color:var(--accent)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:center}
+.logo-disc{width:min(100%,380px);justify-self:center}
+.hero-side{display:flex;flex-direction:column;gap:14px}
+.featured-cap{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap}
+.featured-cap strong{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:15px}
+
+/* Video tile */
+.tile{position:relative;width:100%;aspect-ratio:16/9;background:var(--ink);overflow:hidden}
+.tile.tall{aspect-ratio:9/16}
+.tile canvas{width:100%;height:100%}
+.tile iframe{position:absolute;inset:0;width:100%;height:100%;border:0;pointer-events:none;opacity:0;transition:opacity .4s}
+.tile.playing iframe{opacity:1}
+.tile .hit{position:absolute;inset:0;width:100%;height:100%;display:block}
+.tile .play{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:9px;background:var(--accent);color:var(--paper);padding:8px 13px 8px 11px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;pointer-events:none}
+.tile .play::before{content:"";width:0;height:0;border-left:9px solid currentColor;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.tile:hover .play{background:var(--paper);color:var(--ink)}
+.tile .tag{position:absolute;left:12px;top:12px;background:var(--accent);color:var(--paper);padding:5px 9px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;pointer-events:none}
+.tile .live{position:absolute;right:12px;top:12px;background:var(--ink);color:var(--paper);padding:5px 9px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;pointer-events:none;display:none}
+.tile .live::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:7px}
+.tile.playing .live{display:block}
+
+/* Ticker */
+.ticker{background:var(--paper);color:var(--ink);overflow:hidden;border-top:3px solid var(--ink)}
+.ticker-run{display:flex;width:max-content;animation:run 28s linear infinite}
+.ticker span{font-family:var(--display);font-weight:900;font-size:clamp(15px,1.7vw,22px);text-transform:uppercase;padding:16px 0;white-space:nowrap}
+.ticker span::after{content:"●";font-size:.5em;vertical-align:middle;margin:0 1.4em;color:var(--accent)}
+@keyframes run{to{transform:translateX(-50%)}}
+
+/* Bands */
+.band{padding:clamp(72px,9vw,136px) var(--gutter)}
+.band.ink{background:var(--ink);color:var(--paper)}
+.band-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:clamp(32px,4.5vw,64px)}
+h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(30px,4.8vw,68px);line-height:1;margin:0;text-wrap:balance}
+.ink .label{color:var(--mute-on-dark)}
+.ink h2 em{font-style:normal;color:var(--accent)}
+
+/* Music rows */
+.work{list-style:none;margin:0;padding:0}
+.work>li{display:grid;grid-template-columns:44px minmax(0,6fr) minmax(0,5fr);gap:clamp(20px,3vw,44px);align-items:center;padding:clamp(28px,3.6vw,48px) 0;border-top:1px solid var(--rule-on-dark)}
+.work>li:last-child{border-bottom:1px solid var(--rule-on-dark)}
+.work .num{font-size:12px;letter-spacing:.14em;color:var(--accent);font-variant-numeric:tabular-nums;align-self:start;padding-top:4px}
+.work h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(22px,2.8vw,40px);line-height:1.02;margin:0 0 14px;text-wrap:balance}
+.meta{display:flex;gap:6px 20px;flex-wrap:wrap;color:var(--mute-on-dark);margin-bottom:18px}
+.meta b{color:var(--paper);font-weight:500}
+.links{display:flex;gap:10px 22px;flex-wrap:wrap}
+.links a,.links button{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.links a:hover,.links button:hover{color:var(--accent)}
+.bts{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;align-items:center;margin-top:26px;padding-top:20px;border-top:1px dashed var(--rule-on-dark)}
+.bts p{margin:0 0 8px}
+
+/* Lifestyle */
+.life{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,2.6fr) minmax(0,2.6fr);gap:clamp(20px,3vw,48px);align-items:end}
+.life-text{display:flex;flex-direction:column;gap:18px;align-self:start}
+.life-text p.note{margin:0;max-width:40ch;color:var(--mute-on-light)}
+.reel{display:flex;flex-direction:column;gap:12px}
+.reel h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(15px,1.6vw,20px);line-height:1.1;margin:0}
+.reel .label{color:var(--mute-on-light)}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(24px,5vw,72px);align-items:end}
+.about p.big{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(20px,2.4vw,34px);line-height:1.18;margin:0;max-width:24ch;text-wrap:balance}
+.about p.big em{font-style:normal;color:var(--accent)}
+.about ul{list-style:none;margin:0;padding:0;border-top:3px solid currentColor}
+.about li{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--rule-on-dark);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.about li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.about .note{color:var(--mute-on-dark);max-width:52ch;margin:20px 0 0}
+.about .sign{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(15px,1.7vw,22px);color:var(--accent);margin:28px 0 0}
+
+/* Contact */
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,5vw,72px);align-items:start}
+.contact .inner{display:flex;flex-direction:column;gap:24px;align-items:flex-start}
+.contact h2{font-size:clamp(40px,6.6vw,96px)}
+.contact .lead{margin:0;max-width:34ch}
+.form{display:flex;flex-direction:column;gap:12px}
+.form input,.form select,.form textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:0;padding:15px 16px;appearance:none;-webkit-appearance:none}
+.form select{background-image:linear-gradient(45deg,transparent 50%,var(--ink) 50%),linear-gradient(135deg,var(--ink) 50%,transparent 50%);background-position:calc(100% - 22px) 50%,calc(100% - 16px) 50%;background-size:6px 6px,6px 6px;background-repeat:no-repeat}
+.form select:invalid{color:var(--mute-on-light)}
+.form textarea{resize:vertical;min-height:140px}
+.form ::placeholder{color:var(--mute-on-light);opacity:1}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--accent)}
+.form-foot{display:flex;gap:12px 20px;align-items:center;flex-wrap:wrap}
+.form .btn{cursor:pointer}
+.status{margin:0;font-size:13px;min-height:1.5em}
+.status.bad{color:var(--accent)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--accent);color:var(--paper);text-decoration:none;padding:15px 20px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;border:2px solid var(--accent)}
+.btn:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--paper)}
+.social{display:flex;gap:10px 26px;flex-wrap:wrap}
+.social a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:3px}
+.social a:hover{border-bottom-width:3px}
+
+footer{background:var(--ink);color:var(--mute-on-dark);padding:18px var(--gutter);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+
+/* Viewer */
+.viewer{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.95);color:#fff;display:none;flex-direction:column;padding:16px var(--gutter) 22px;gap:14px}
+.viewer.open{display:flex}
+.viewer-bar{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.viewer-title{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(12px,1.6vw,17px)}
+.viewer-stage{flex:1;min-height:0;display:flex;align-items:center;justify-content:center}
+.frame{position:relative;width:min(100%,calc((100vh - 170px) * 16 / 9));aspect-ratio:16/9;background:#000;outline:1px solid var(--rule-on-dark)}
+.frame.tall{width:min(100%,calc((100vh - 170px) * 9 / 15));aspect-ratio:9/15}
+.frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.frame .fallback{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:20px}
+.frame.blocked iframe{display:none}
+.frame.blocked .fallback{display:flex}
+.frame .fallback .btn:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+.viewer-nav{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.viewer button,.viewer-nav a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;padding:8px 0;text-decoration:none;border-bottom:1px solid transparent}
+.viewer button:hover,.viewer-nav a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
+/* Curtain on load. Decorative only, content sits fully rendered underneath. */
+/* Intro: the logo's lips are zipped shut. The zipper runs only across the mouth. Dragging the pull to the
+   right parts the lips, the site shows through the opening, and the page then opens out through the mouth. */
+html.zip-lock,html.zip-lock body{overflow:hidden}
+.zip{position:fixed;inset:0;z-index:100;overflow:hidden;touch-action:none;user-select:none;-webkit-user-select:none;color:#fff}
+.zip-stage{position:absolute;inset:0;background:var(--ink);will-change:transform,clip-path}
+.zip-logo{position:absolute;max-width:none;pointer-events:none}
+.zip-tape{position:absolute;inset:0;width:100%;height:100%;max-width:none;pointer-events:none}
+.zip-teeth{position:absolute;inset:0;width:100%;height:100%;max-width:none;pointer-events:none;transition:opacity .2s}
+.zip-pull{position:absolute;left:0;top:0;width:60px;height:96px;margin:-18px 0 0 -30px;cursor:grab;transition:opacity .2s;-webkit-tap-highlight-color:transparent}
+.zip.dragging,.zip.dragging .zip-pull{cursor:grabbing}
+.zip-pull:focus-visible{outline:2px solid #fff;outline-offset:2px}
+/* Rhodium: a bright, cool, mirror-like silver. Hard bands of light and dark give it the polished look. */
+.zip-body{position:absolute;left:13px;top:5px;width:34px;height:26px;border-radius:7px 13px 13px 7px;background:linear-gradient(176deg,#ffffff 0%,#eef2f7 18%,#aab2be 44%,#6d7683 52%,#f6f9fc 62%,#cfd6df 82%,#8b94a1 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.75),inset 0 -2px 2px rgba(40,48,60,.55),0 4px 12px rgba(0,0,0,.7)}
+.zip-body::before{content:"";position:absolute;left:5px;right:7px;top:3px;height:3px;border-radius:2px;background:rgba(255,255,255,.95)}
+.zip-body::after{content:"";position:absolute;left:11px;top:10px;width:12px;height:8px;border-radius:4px;background:#0c0d10;box-shadow:inset 0 1px 2px #000,0 1px 0 rgba(255,255,255,.7)}
+.zip-tab{position:absolute;left:21px;top:22px;width:18px;height:60px;border-radius:9px;background:linear-gradient(98deg,#ffffff 0%,#e9eef4 20%,#9ea7b4 42%,#69727f 50%,#f4f7fb 58%,#c8cfd9 80%,#8a93a0 100%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.7),inset 0 -4px 3px rgba(40,48,60,.45),0 5px 14px rgba(0,0,0,.7);transform-origin:50% 5px;transition:transform .25s cubic-bezier(.3,1.6,.5,1)}
+.zip-tab::before{content:"";position:absolute;left:5px;top:5px;width:8px;height:8px;border-radius:50%;background:#0c0d10;box-shadow:inset 0 1px 2px #000,0 1px 0 rgba(255,255,255,.8)}
+.zip-tab::after{content:"";position:absolute;left:6px;bottom:9px;width:6px;height:26px;border-radius:3px;background:linear-gradient(90deg,rgba(40,48,60,.5),rgba(255,255,255,.55));box-shadow:inset 0 1px 1px rgba(0,0,0,.4)}
+.zip-pull:hover .zip-tab{transform:rotate(-9deg)}
+.zip.idle .zip-pull{animation:zip-nudge 2.2s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes zip-nudge{0%,60%,100%{translate:0 0}28%{translate:16px 0}}
+.zip-hint{position:absolute;left:0;right:0;margin:0;display:flex;justify-content:center;align-items:center;gap:14px;font-family:var(--display);font-weight:800;font-size:clamp(13px,1.5vw,17px);letter-spacing:.22em;text-transform:uppercase;pointer-events:none}
+.zip-hint i{font-style:normal;letter-spacing:0;font-size:1.25em;color:var(--accent);animation:zip-arrow 2.2s cubic-bezier(.5,0,.3,1) infinite}
+@keyframes zip-arrow{0%,60%,100%{transform:none}28%{transform:translateX(10px)}}
+.zip-skip{position:absolute;right:var(--gutter);top:16px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.6);padding:8px 0;border-bottom:1px solid transparent;cursor:pointer;transition:opacity .2s}
+.zip-skip:hover{color:#fff;border-bottom-color:#fff}
+.zip.open{pointer-events:none}
+.zip.open .zip-teeth,.zip.open .zip-pull,.zip.open .zip-hint,.zip.open .zip-skip{opacity:0}
+
+@media (max-width:860px){
+  .hero-grid{grid-template-columns:1fr}
+  .logo-disc{width:min(72%,320px)}
+  .work>li{grid-template-columns:1fr}
+  .work .num{padding:0}
+  .life{grid-template-columns:1fr 1fr}
+  .life-text{grid-column:1 / -1}
+  .about{grid-template-columns:1fr}
+  .contact{grid-template-columns:1fr}
+  .top nav a{letter-spacing:.08em}
+}
+@media (max-width:460px){
+  .brand{display:none}
+  .top{justify-content:center}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker-run{animation:none}
+  .zip{display:none}
+}
+
+[hidden]{display:none!important}
+img{height:auto}
+footer nav{display:flex;gap:10px 22px;flex-wrap:wrap}
+footer a,footer button{text-decoration:none;letter-spacing:inherit;text-transform:inherit;font-size:inherit}
+footer a:hover,footer button:hover{color:var(--paper)}
+.consent-note{margin:0;font-size:13px;color:var(--mute-on-light)}
+.frame .panel{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:16px;text-align:center;padding:24px}
+.frame .panel p{margin:0;max-width:36ch;font-size:14px;color:var(--mute-on-dark)}
+.frame.blocked iframe,.frame.ask iframe{display:none}
+.frame.blocked .panel.is-blocked{display:flex}
+.frame.ask:not(.blocked) .panel.is-ask{display:flex}
+.frame .panel .btn:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+
+.tile img.real{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:none}
+.tile .screen{position:absolute;inset:0;display:none;pointer-events:none;background:radial-gradient(circle at center,transparent 0 54%,rgba(0,0,0,.9) 60%);background-size:8px 8px}
+.tile.has-img img.real,.tile.has-img .screen{display:block}
+.work>li{grid-template-columns:44px minmax(0,6fr) minmax(0,1.9fr) minmax(0,4.6fr)}
+.btn-bts{display:inline-flex;align-items:center;margin-top:22px;padding:13px 16px;border:2px solid var(--accent);color:var(--paper);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.btn-bts:hover{background:var(--accent)}
+@media (max-width:860px){
+  .work>li{grid-template-columns:minmax(0,1.78fr) minmax(0,1fr);align-items:start}
+  .work>li>.num,.work>li>div:last-child{grid-column:1 / -1}
+}
+.band.ruled{border-top:3px solid var(--ink)}
+.band h2 em{font-style:normal;color:var(--accent)}
+.who{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(20px,3vw,48px)}
+.who>div{border-top:3px solid var(--ink);padding-top:18px}
+.who h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(20px,2.1vw,30px);line-height:1.05;margin:0 0 12px}
+.who p{margin:0;color:var(--mute-on-light);max-width:36ch}
+.who-cta{margin:clamp(28px,4vw,48px) 0 0;display:flex;gap:12px;flex-wrap:wrap}
+.who-cta .btn{display:inline-flex}
+@media (max-width:860px){.who{grid-template-columns:1fr}}
+.dd-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dd{position:relative}
+.dd-btn{width:100%;display:flex;justify-content:space-between;align-items:center;gap:12px;text-align:left;font-size:16px;color:var(--mute-on-light);background:var(--paper);border:2px solid var(--ink);padding:15px 16px}
+.dd-btn::after{content:"";flex:none;width:9px;height:9px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-3px) rotate(45deg);transition:transform .15s}
+.dd.open .dd-btn::after{transform:translateY(2px) rotate(-135deg)}
+.dd.filled .dd-btn{color:var(--ink)}
+.dd-btn:hover,.dd.open .dd-btn{border-color:var(--accent)}
+.dd-btn:focus-visible{outline:none;border-color:var(--accent)}
+.dd-list{position:absolute;left:0;right:0;top:100%;z-index:6;margin:-2px 0 0;padding:6px 0;list-style:none;background:var(--paper);border:2px solid var(--accent);max-height:264px;overflow:auto;box-shadow:6px 6px 0 var(--ink)}
+.dd-list li{display:flex;align-items:center;gap:10px;padding:12px 16px;font-size:15px;cursor:pointer}
+.dd-list li::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;border:2px solid var(--ink)}
+.dd-list li[aria-selected="true"]::before{background:var(--accent);border-color:var(--accent)}
+.dd-list li:hover,.dd-list li:focus{background:var(--ink);color:var(--paper);outline:none}
+.dd-list li:hover::before,.dd-list li:focus::before{border-color:var(--paper)}
+.dd-list li[aria-selected="true"]:hover::before,.dd-list li[aria-selected="true"]:focus::before{border-color:var(--accent)}
+@media (max-width:560px){.dd-row{grid-template-columns:1fr}}
+
+/* Views: the home page and the three document pages share one file and swap on the address hash. */
+.view[hidden]{display:none!important}
+
+
+/* Motion */
+.name{overflow:hidden;padding-bottom:.06em;white-space:nowrap;font-size:clamp(28px,8.2vw,126px)}
+.name .ch{display:inline-block;transform:translateY(110%)}
+.ready .name .ch{animation:rise .8s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(.1s + var(--i) * 45ms)}
+.name .sp{width:.28em}
+@keyframes rise{to{transform:none}}
+.js .reveal{opacity:0;transform:translateY(30px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0ms)}
+.js .reveal.in{opacity:1;transform:none}
+.tile canvas,.tile img.real{transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.tile:hover canvas,.tile:hover img.real{transform:scale(1.04)}
+.tile .play{transition:padding .2s,background .2s,color .2s}
+.tile:hover .play{padding-right:22px}
+@media (prefers-reduced-motion:reduce){
+  .name .ch{animation:none;transform:none}
+  .js .reveal{opacity:1;transform:none;transition:none}
+  .tile canvas,.tile img.real{transition:none}
+  .tile:hover canvas,.tile:hover img.real{transform:none}
+}
+/* Thumbnails: one real frame per tile, with a muted preview clip that fades in over it on hover. */
+.tile video.pv{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .25s;pointer-events:none}
+.tile video.pv.on{opacity:1}
+.tile img.fr{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .45s ease,transform .6s cubic-bezier(.2,.7,.2,1)}
+.tile img.fr.on{opacity:1}
+.tile:hover img.fr{transform:scale(1.04)}
+.work>li{grid-template-columns:44px minmax(0,6fr) minmax(0,5fr)}
+.tile.extra{margin-top:22px;max-width:360px}
+.btn-bts{margin-top:14px}
+.life{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.band:not(.ink) .band-head .label{color:var(--mute-on-light)}
+@media (max-width:860px){
+  .work>li{grid-template-columns:1fr}
+  .life{grid-template-columns:1fr}
+  .tile.extra{max-width:none}
+}
+@media (prefers-reduced-motion:reduce){.tile img.fr{transition:none}.tile:hover img.fr{transform:none}}
+
+/* About: one centred column. */
+.about-c{max-width:780px;margin-inline:auto;display:flex;flex-direction:column;align-items:center;text-align:center;gap:22px}
+.about-mark{width:clamp(96px,11vw,150px);margin-bottom:6px}
+.about-c .big{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(24px,3.4vw,46px);line-height:1.1;margin:0;max-width:18ch;text-wrap:balance}
+.about-c .big em{font-style:normal;color:var(--accent)}
+.about-rule{width:56px;height:3px;background:var(--accent)}
+.about-c .note{margin:0;max-width:56ch;color:var(--mute-on-dark)}
+.about-c .sign{margin:14px 0 0;font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(15px,1.7vw,22px);color:var(--accent)}
+
+/* Touch screens: give small text links a taller tap area. */
+@media (pointer:coarse){
+  .links a,.links button{padding-top:12px}
+  footer a{display:inline-block;padding:12px 0}
+  .top nav a{padding:12px 0}
+  .consent-note a{display:inline-block;padding:6px 0}
+}
+
+/* Static halftone corners: a patch of dots fading out of one corner of a section, kept clear of the text. */
+.deco{position:relative;isolation:isolate;overflow:hidden}
+.deco::before,.deco::after{content:"";position:absolute;z-index:-1;pointer-events:none;width:clamp(200px,27vw,400px);aspect-ratio:1;color:var(--ink)}
+.deco.ink::before,.deco.ink::after{color:var(--paper)}
+.deco::before{background:radial-gradient(circle,currentColor 4.2px,transparent 4.8px) 0 0/18px 18px}
+.deco::after{background:radial-gradient(circle,currentColor 2px,transparent 2.6px) 0 0/18px 18px}
+.deco.bl::before,.deco.bl::after{left:0;bottom:0}
+.deco.tr::before,.deco.tr::after{right:0;top:0}
+.deco.bl::before{-webkit-mask:radial-gradient(circle at 0 100%,#000 0,transparent 46%);mask:radial-gradient(circle at 0 100%,#000 0,transparent 46%)}
+.deco.bl::after{-webkit-mask:radial-gradient(circle at 0 100%,transparent 40%,#000 46%,transparent 72%);mask:radial-gradient(circle at 0 100%,transparent 40%,#000 46%,transparent 72%)}
+.deco.tr::before{-webkit-mask:radial-gradient(circle at 100% 0,#000 0,transparent 46%);mask:radial-gradient(circle at 100% 0,#000 0,transparent 46%)}
+.deco.tr::after{-webkit-mask:radial-gradient(circle at 100% 0,transparent 40%,#000 46%,transparent 72%);mask:radial-gradient(circle at 100% 0,transparent 40%,#000 46%,transparent 72%)}
+@media (max-width:860px){.deco::before,.deco::after{display:none}}
+
+.doc{padding:calc(46px + clamp(40px,6vw,88px)) var(--gutter) clamp(72px,10vw,144px);font-size:15px;line-height:1.7}
+.doc.narrow{max-width:calc(74ch + 2 * var(--gutter));margin-inline:auto}
+.doc .back{display:inline-block;margin:0 0 clamp(28px,4vw,48px);font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+.doc .back:hover{color:var(--accent)}
+.doc .label{color:var(--mute-on-light);margin:0 0 16px}
+.doc h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(34px,7vw,96px);line-height:.95;margin:0 0 28px;text-wrap:balance}
+.doc.narrow h1{font-size:clamp(30px,4.6vw,60px)}
+.doc h1 em{font-style:normal;color:var(--accent)}
+.doc h2{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:clamp(16px,1.7vw,21px);line-height:1.2;margin:52px 0 14px;padding-top:22px;border-top:1px solid var(--rule-on-paper);text-wrap:balance}
+.doc h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:14px;line-height:1.3;margin:26px 0 8px}
+.doc p,.doc ul,.doc ol{margin:0 0 16px}
+.doc ul,.doc ol{padding-left:22px}
+.doc li{margin-bottom:6px}
+.doc .lede{color:var(--mute-on-light);font-size:17px;max-width:62ch}
+.doc .toc{border:2px solid var(--ink);background:var(--paper);padding:18px 20px 6px;margin:32px 0 0;font-size:14px}
+.doc .toc ol{columns:2;column-gap:32px}
+.doc .sec{margin-top:clamp(56px,8vw,112px)}
+.doc .sec>h2{font-weight:900;font-size:clamp(26px,4.4vw,60px);line-height:.98;border-top:3px solid var(--ink);padding-top:18px;margin:0 0 clamp(24px,3vw,40px)}
+.doc .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,3vw,48px) clamp(20px,3vw,48px)}
+.doc .cards.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.doc .card{border-top:1px solid var(--rule-on-paper);padding-top:18px}
+.doc .card .n,.doc .steps li::before{font-size:12px;letter-spacing:.14em;color:var(--accent);font-variant-numeric:tabular-nums}
+.doc .card h3{font-size:clamp(20px,2.4vw,32px);line-height:1;margin:8px 0 12px}
+.doc .card p{color:var(--mute-on-light);max-width:44ch}
+.doc .card ul{list-style:none;padding:0;margin:14px 0 0;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.doc .card li{padding:9px 0;border-top:1px solid var(--rule-on-paper);margin:0}
+.doc .steps{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(20px,3vw,40px);counter-reset:s}
+.doc .steps li{counter-increment:s;border-top:1px solid var(--rule-on-paper);padding-top:18px;margin:0}
+.doc .steps li::before{content:"0" counter(s)}
+.doc .steps h3{font-size:clamp(17px,1.8vw,22px);margin:8px 0 10px}
+.doc .steps p{color:var(--mute-on-light);margin:0}
+.doc .faq{max-width:78ch}
+.doc .faq h3{font-size:clamp(15px,1.6vw,19px);margin:0 0 8px;padding-top:20px;border-top:1px solid var(--rule-on-paper)}
+.doc .faq p{color:var(--mute-on-light);margin:0 0 22px}
+.doc .cta{margin-top:clamp(56px,8vw,112px);background:var(--ink);color:var(--paper);padding:clamp(28px,5vw,72px);display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap}
+.doc .cta p{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(28px,5vw,72px);line-height:.95;margin:0}
+.doc .cta .btn:hover{background:var(--paper);border-color:var(--paper);color:var(--ink)}
+@media (max-width:860px){
+  .doc .cards,.doc .cards.three,.doc .steps{grid-template-columns:1fr}
+  .doc .toc ol{columns:1}
+}
+
+</style>
+</head>
+<body>
+
+<div class="zip" id="zip" aria-label="Intro">
+  <div class="zip-stage" id="zipStage" aria-hidden="true">
+    <img class="zip-logo" src="lips.png" alt="">
+    <canvas class="zip-tape"></canvas>
+  </div>
+  <canvas class="zip-teeth" aria-hidden="true"></canvas>
+  <button class="zip-pull" id="zipPull" type="button" aria-label="Unzip to enter the site"><span class="zip-body"></span><span class="zip-tab"></span></button>
+  <p class="zip-hint" aria-hidden="true"><span>Unzip to discover</span><i>→</i></p>
+  <button class="zip-skip" id="zipSkip" type="button">Skip</button>
+</div>
+
+<header class="top">
+  <a class="brand" href="#top">Patience Told<i>.</i></a>
+  <nav aria-label="Sections">
+    <a href="#music">Music</a>
+    <a href="#lifestyle">Lifestyle</a>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top" class="view">
+  <section class="hero">
+    <div>
+      <h1 class="name">Patience Told<i>.</i></h1>
+      <div class="role-row">
+        <p class="role">Karim Elnaggar <span>Director and Editor</span></p>
+        <p class="label">Montréal</p>
+      </div>
+    </div>
+    <div class="hero-grid">
+      <div class="logo-disc"><img src="logo.png" alt="Patience Told."></div>
+      <div class="hero-side">
+        <div class="tile">
+          <img class="fr on" src="frames/v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
+          <span class="tag">Featured</span>
+          <span class="play">Play with sound</span>
+          <button class="hit" type="button" data-play="0" aria-label="Play Mamz, Blurry / House with sound"></button>
+        </div>
+        <div class="featured-cap">
+          <strong>Mamz, Blurry / House</strong>
+          <span class="label">Official music video</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-run">
+      <span>Direction</span><span>Videography</span><span>Production</span><span>Design</span>
+      <span>Direction</span><span>Videography</span><span>Production</span><span>Design</span>
+      <span>Direction</span><span>Videography</span><span>Production</span><span>Design</span>
+      <span>Direction</span><span>Videography</span><span>Production</span><span>Design</span>
+    </div>
+  </div>
+
+  <section class="band ink" id="music">
+    <div class="band-head">
+      <h2>Music <em>videos</em></h2>
+      <span class="label">Hover to preview</span>
+    </div>
+    <ol class="work">
+      <li>
+        <span class="num">01</span>
+        <div class="tile">
+          <img class="fr on" src="frames/v0_1.jpg" alt="Still from Mamz, Blurry / House" width="768" height="432" data-seq="0">
+          <span class="play">Play with sound</span>
+          <button class="hit" type="button" data-play="0" aria-label="Play Mamz, Blurry / House with sound"></button>
+        </div>
+        <div>
+          <h3>Blurry / House</h3>
+          <div class="meta"><span><b>Mamz</b></span><span>Official music video</span><span>Directed by Karim Elnaggar</span></div>
+          <div class="links">
+            <button type="button" data-play="0">Play here</button>
+            <a href="https://youtu.be/TB2q0LTzim8" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+          <div class="tile extra">
+            <img class="fr on" src="frames/v4_cover.jpg" alt="Still from the Blurry / House behind the scenes teaser" width="768" height="432" data-seq="4">
+            <span class="tag">Behind the scenes</span>
+            <button class="hit" type="button" data-play="4" aria-label="Play the Blurry / House behind the scenes teaser"></button>
+          </div>
+          <button class="btn-bts" type="button" data-play="4">Watch the behind the scenes →</button>
+        </div>
+      </li>
+      <li>
+        <span class="num">02</span>
+        <div class="tile">
+          <img class="fr on" src="frames/v1_1.jpg" alt="Still from Mamz, TANA" width="768" height="432" data-seq="1">
+          <span class="play">Play with sound</span>
+          <button class="hit" type="button" data-play="1" aria-label="Play Mamz, TANA with sound"></button>
+        </div>
+        <div>
+          <h3>TANA</h3>
+          <div class="meta"><span><b>Mamz</b></span><span>Official music video</span><span>Directed by Karim Elnaggar</span></div>
+          <div class="links">
+            <button type="button" data-play="1">Play here</button>
+            <a href="https://youtu.be/1lY-K7u6tsA" target="_blank" rel="noopener">Watch on YouTube ↗</a>
+          </div>
+          <div class="tile extra">
+            <img class="fr on" src="frames/v5_cover.jpg" alt="Still from the TANA making of" width="768" height="432" data-seq="5">
+            <span class="tag">Making of</span>
+            <button class="hit" type="button" data-play="5" aria-label="Play the TANA making of"></button>
+          </div>
+          <button class="btn-bts" type="button" data-play="5">Watch the making of →</button>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="band" id="lifestyle">
+    <div class="band-head">
+      <h2>Lifestyle</h2>
+      <span class="label">Shot and cut by Karim · Released through Patience Told</span>
+    </div>
+    <div class="life">
+      <div class="reel">
+        <div class="tile">
+          <img class="fr on" src="frames/v2_1.jpg" alt="Still from New York City, a visual" width="768" height="432" data-seq="2">
+          <span class="play">Play</span>
+          <button class="hit" type="button" data-play="2" aria-label="Play New York City, a visual"></button>
+        </div>
+        <h3>New York City</h3>
+        <span class="label">A visual · June 2026</span>
+        <div class="links"><a href="https://www.instagram.com/patiencetold/reel/DZcnIFzhulN/" target="_blank" rel="noopener">Instagram ↗</a></div>
+      </div>
+      <div class="reel">
+        <div class="tile">
+          <img class="fr on" src="frames/v3_1.jpg" alt="Still from AlUla, a visual" width="768" height="432" data-seq="3">
+          <span class="play">Play</span>
+          <button class="hit" type="button" data-play="3" aria-label="Play AlUla, a visual"></button>
+        </div>
+        <h3>AlUla</h3>
+        <span class="label">A visual · February 2026</span>
+        <div class="links"><a href="https://www.instagram.com/patiencetold/reel/DUpzRatDglE/" target="_blank" rel="noopener">Instagram ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band ruled" id="who">
+    <div class="band-head">
+      <h2>Built for artists. <em>Open to collabs.</em></h2>
+      <span class="label">Who we work with</span>
+    </div>
+    <div class="who">
+      <div>
+        <h3>Artists</h3>
+        <p>Music video production in Montréal for local and independent artists. Concept, shoot and edit, start to finish.</p>
+      </div>
+      <div>
+        <h3>Brands and businesses</h3>
+        <p>Need content filmed? Campaigns, launches, events and social visuals. Every brand has its own taste, and we shoot to match it.</p>
+      </div>
+      <div>
+        <h3>Creatives</h3>
+        <p>Directors, photographers, stylists, producers, designers. If you want to make something together, we're open to it.</p>
+      </div>
+    </div>
+    <p class="who-cta"><a class="btn" href="#contact">Start a project →</a><a class="btn ghost" href="#services">See all services</a></p>
+  </section>
+
+  <section class="band ink" id="about">
+    <div class="about-c">
+      <img class="about-mark" src="lips.png" alt="" width="900" height="768">
+      <p class="label">About</p>
+      <p class="big">Patience Told is a <em>creative company</em>.</p>
+      <span class="about-rule" aria-hidden="true"></span>
+      <p class="note">We care for details, we care for art — music videos, films, campaigns, and everything in between. We don't just produce work, we set a standard for what's around us.</p>
+      <p class="note">One brand. One story. Every project is an opportunity, consider this yours…</p>
+      <p class="sign">Be patient, time will tell.</p>
+    </div>
+  </section>
+
+  <section class="band" id="contact">
+    <div class="contact">
+      <div class="inner">
+        <p class="label">Bookings and collabs</p>
+        <h2>Let's<br>work.</h2>
+        <p class="lead">Have a project in mind? Tell us about it and we'll get back to you.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/patiencetold/" target="_blank" rel="noopener">Instagram @patiencetold ↗</a>
+          <a href="https://www.instagram.com/onlykarimhere/" target="_blank" rel="noopener">Instagram @onlykarimhere ↗</a>
+        </div>
+      </div>
+      <form class="form" id="form" novalidate>
+        <label class="sr" for="f-name">Your name</label>
+        <input id="f-name" name="name" type="text" placeholder="Your name" autocomplete="name" required>
+        <label class="sr" for="f-email">Email</label>
+        <input id="f-email" name="email" type="email" placeholder="Email" autocomplete="email" required>
+        <div class="dd-row">
+          <div class="dd" data-name="industry">
+            <span class="sr" id="l-industry">Industry</span>
+            <button class="dd-btn" type="button" id="f-industry" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="l-industry f-industry"><span class="dd-val">Industry</span></button>
+            <ul class="dd-list" role="listbox" aria-labelledby="l-industry" hidden>
+              <li role="option" tabindex="-1" aria-selected="false">Music</li>
+              <li role="option" tabindex="-1" aria-selected="false">Fashion and apparel</li>
+              <li role="option" tabindex="-1" aria-selected="false">Nightlife and events</li>
+              <li role="option" tabindex="-1" aria-selected="false">Food and hospitality</li>
+              <li role="option" tabindex="-1" aria-selected="false">Beauty and wellness</li>
+              <li role="option" tabindex="-1" aria-selected="false">Sports and fitness</li>
+              <li role="option" tabindex="-1" aria-selected="false">Art and culture</li>
+              <li role="option" tabindex="-1" aria-selected="false">Tech and startups</li>
+              <li role="option" tabindex="-1" aria-selected="false">Other</li>
+            </ul>
+            <input type="hidden" name="industry">
+          </div>
+          <div class="dd" data-name="type">
+            <span class="sr" id="l-type">Project type</span>
+            <button class="dd-btn" type="button" id="f-type" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="l-type f-type"><span class="dd-val">Project type</span></button>
+            <ul class="dd-list" role="listbox" aria-labelledby="l-type" hidden>
+              <li role="option" tabindex="-1" aria-selected="false">Music video</li>
+              <li role="option" tabindex="-1" aria-selected="false">Lifestyle visual</li>
+              <li role="option" tabindex="-1" aria-selected="false">Brand content</li>
+              <li role="option" tabindex="-1" aria-selected="false">Behind the scenes</li>
+              <li role="option" tabindex="-1" aria-selected="false">Collab</li>
+              <li role="option" tabindex="-1" aria-selected="false">Other</li>
+            </ul>
+            <input type="hidden" name="type">
+          </div>
+        </div>
+        <label class="sr" for="f-msg">Message</label>
+        <textarea id="f-msg" name="message" rows="5" placeholder="Message" required></textarea>
+        <p class="consent-note">We only use what you send to reply to you. See the <a href="#privacy">privacy policy</a>.</p>
+        <div class="form-foot">
+          <button class="btn" type="submit">Send message →</button>
+          <p class="status" id="f-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div class="view doc wide" id="page-services" hidden>
+<a class="back" href="#top">← Back home</a>
+<p class="label">Services</p>
+<h1>From the first idea to the <em>final file</em>.</h1>
+<p class="lede">Patience Told is a creative company in Montréal. We work with artists, brands and other creatives on music videos and visuals, and we handle direction, videography, production and design under one roof.</p>
+
+<section class="sec">
+  <h2>What we do</h2>
+  <div class="cards">
+    <div class="card">
+      <span class="n">01</span>
+      <h3>Direction</h3>
+      <p>The idea, and how it should look and feel on screen.</p>
+      <ul><li>Concept and treatment</li><li>Creative direction</li><li>Shot planning</li></ul>
+    </div>
+    <div class="card">
+      <span class="n">02</span>
+      <h3>Videography</h3>
+      <p>The shoot itself, on location or on set.</p>
+      <ul><li>Music videos</li><li>Lifestyle and travel visuals</li><li>Content for brands and businesses</li></ul>
+    </div>
+    <div class="card">
+      <span class="n">03</span>
+      <h3>Production</h3>
+      <p>Everything that gets a shoot made and finished.</p>
+      <ul><li>Planning and scheduling</li><li>Running the shoot day</li><li>Edit and final delivery</li></ul>
+    </div>
+    <div class="card">
+      <span class="n">04</span>
+      <h3>Design</h3>
+      <p>The visual pieces that go around the video.</p>
+      <ul><li>Titles and on-screen graphics</li><li>Visuals for the rollout</li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <h2>Who we work with</h2>
+  <div class="cards three">
+    <div class="card">
+      <h3>Artists</h3>
+      <p>Music video production in Montréal for local and independent artists. Concept, shoot and edit, start to finish.</p>
+    </div>
+    <div class="card">
+      <h3>Brands and businesses</h3>
+      <p>Campaigns, launches, events and social visuals. Every brand has its own taste, and we shoot to match it.</p>
+    </div>
+    <div class="card">
+      <h3>Creatives</h3>
+      <p>Directors, photographers, stylists, producers, designers. If you want to make something together, we're open to it.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta">
+  <p>Let's work.</p>
+  <a class="btn" href="#contact">Start a project →</a>
+</div>
+</div>
+
+<div class="view doc narrow" id="page-privacy" hidden>
+<a class="back" href="#top">← Back home</a>
+<p class="label">Effective November 11, 2026 · Last updated November 11, 2026</p>
+<h1>Privacy policy</h1>
+<p class="lede">This policy explains what personal information Patience Told collects through patiencetold.com, why we collect it, who we share it with, how long we keep it, and the rights you have over it.</p>
+
+<nav class="toc" aria-label="Contents"><ol>
+<li><a href="#p1">Scope</a></li>
+<li><a href="#p2">Who is responsible</a></li>
+<li><a href="#p3">Information we collect</a></li>
+<li><a href="#p4">Why we use it</a></li>
+<li><a href="#p5">Consent</a></li>
+<li><a href="#p6">Cookies and embedded video</a></li>
+<li><a href="#p7">Who we share it with</a></li>
+<li><a href="#p8">Transfers outside Québec</a></li>
+<li><a href="#p9">How long we keep it</a></li>
+<li><a href="#p10">How we protect it</a></li>
+<li><a href="#p11">Your rights</a></li>
+<li><a href="#p12">Minors</a></li>
+<li><a href="#p13">Privacy incidents</a></li>
+<li><a href="#p14">Changes to this policy</a></li>
+<li><a href="#p15">Contact and complaints</a></li>
+</ol></nav>
+
+<h2 id="p1">1. Scope</h2>
+<p>This policy applies to the website patiencetold.com and to messages you send us through it. The site is also the portfolio of Karim Elnaggar, director and editor. It doesn't cover YouTube, Instagram or any other site we link to or embed; those services have their own policies.</p>
+<p>Work we do for clients is also covered by the written agreement for that project.</p>
+
+<h2 id="p2">2. Who is responsible</h2>
+<p>Patience Told is a creative company based in Montréal, Québec, Canada. In this policy, "we" and "us" mean Patience Told.</p>
+<p>The person responsible for the protection of personal information is Karim Elnaggar, Director. You can reach him at <a href="mailto:karim@patiencetold.com">karim@patiencetold.com</a>.</p>
+
+<h2 id="p3">3. Information we collect</h2>
+<h3>Information you give us</h3>
+<p>When you send the contact form, we receive:</p>
+<ul>
+<li>your name</li>
+<li>your email address</li>
+<li>the industry and type of project you select</li>
+<li>the content of your message, including anything you choose to tell us about yourself or your project</li>
+</ul>
+<h3>Information collected automatically</h3>
+<p>Our web host keeps standard server logs when you visit: IP address, date and time, the page requested, and the browser and device type. We use these only for security and to keep the site running.</p>
+<p>We don't use analytics, advertising pixels or tracking tools, and we don't build profiles of visitors.</p>
+<h3>Information from other sources</h3>
+<p>We don't buy or collect personal information about you from third parties.</p>
+
+<h2 id="p4">4. Why we use it</h2>
+<p>We use personal information only to:</p>
+<ul>
+<li>reply to your message</li>
+<li>discuss, scope and quote a project you've asked about</li>
+<li>carry out and deliver a project if we work together</li>
+<li>keep the business records the law requires</li>
+<li>keep the site secure and working</li>
+</ul>
+<p>We don't sell personal information, and we don't use it for marketing or share it with anyone for theirs. We don't make decisions about you by automated means.</p>
+
+<h2 id="p5">5. Consent</h2>
+<p>We collect and use your information with your consent. By sending the contact form you consent to our using what you send for the purposes above.</p>
+<p>You can withdraw that consent at any time by writing to us. Withdrawing consent doesn't affect what was done before you withdrew it.</p>
+
+<h2 id="p6">6. Cookies and embedded video</h2>
+<p>This site sets no cookies of its own and stores nothing in your browser.</p>
+<p>The videos shown here are hosted by YouTube and Instagram and play through their players. When a player loads on the page, those companies may set their own cookies and collect information such as your IP address and viewing activity, under their own privacy policies. We don't receive that information.</p>
+<p>You can block third-party cookies in your browser settings. Every video also has a link that opens it directly on YouTube or Instagram.</p>
+
+<h2 id="p7">7. Who we share it with</h2>
+<p>We share personal information only with service providers who need it to provide their service to us:</p>
+<ul>
+<li>our web host, which stores the site and its server logs</li>
+<li>our form delivery service and our email provider, through which contact form messages reach us</li>
+<li>Google Fonts, which serves the site's typefaces and receives your IP address when a page loads</li>
+<li>YouTube and Instagram, whose players load when a video plays on the page</li>
+</ul>
+<p>We may also disclose information where the law requires it, or to protect our rights or someone's safety.</p>
+
+<h2 id="p8">8. Transfers outside Québec</h2>
+<p>Some of these providers store or process information outside Québec, including in the United States. Information held there is subject to the laws of that place. We use established providers and limit what we send them to what the service needs.</p>
+
+<h2 id="p9">9. How long we keep it</h2>
+<p>We keep a message for as long as we need it to answer you and, where a project follows, for the life of that project and for as long afterward as we need for our business and tax records. After that we delete it or make it anonymous. You can ask us to delete your message sooner.</p>
+
+<h2 id="p10">10. How we protect it</h2>
+<p>The site is served over an encrypted connection. Access to messages is limited to the people at Patience Told who need them, on password-protected accounts. No method of transmission or storage is completely secure, but we take reasonable steps to protect what you send us.</p>
+
+<h2 id="p11">11. Your rights</h2>
+<p>Under Québec's Act respecting the protection of personal information in the private sector and Canada's federal privacy law, you can:</p>
+<ul>
+<li>ask whether we hold personal information about you and get a copy of it</li>
+<li>ask us to correct information that is inaccurate, incomplete or out of date</li>
+<li>withdraw your consent to our using it</li>
+<li>ask us to delete it, or to stop sharing it, where the law provides for that</li>
+<li>ask for information you gave us in a structured, commonly used format</li>
+</ul>
+<p>To use any of these rights, write to <a href="mailto:karim@patiencetold.com">karim@patiencetold.com</a>. We may need to confirm your identity first. We answer within 30 days.</p>
+
+<h2 id="p12">12. Minors</h2>
+<p>This site isn't directed at children under 14, and we don't knowingly collect their personal information. If you're under 14, ask a parent or guardian to contact us for you.</p>
+
+<h2 id="p13">13. Privacy incidents</h2>
+<p>If personal information we hold is accessed, used or lost without authorisation and this creates a risk of serious harm, we will notify the people affected and the Commission d'accès à l'information du Québec, and we keep a record of every incident.</p>
+
+<h2 id="p14">14. Changes to this policy</h2>
+<p>We may update this policy as the site or the law changes. The dates at the top show when it last changed. If a change is significant, we'll flag it on the site.</p>
+
+<h2 id="p15">15. Contact and complaints</h2>
+<p>Questions, requests and complaints about privacy go to Karim Elnaggar at <a href="mailto:karim@patiencetold.com">karim@patiencetold.com</a>.</p>
+<p>If you're not satisfied with our answer, you can file a complaint with the Commission d'accès à l'information du Québec (cai.gouv.qc.ca) or the Office of the Privacy Commissioner of Canada (priv.gc.ca).</p>
+</div>
+
+<div class="view doc narrow" id="page-terms" hidden>
+<a class="back" href="#top">← Back home</a>
+<p class="label">Effective November 11, 2026 · Last updated November 11, 2026</p>
+<h1>Terms of use</h1>
+<p class="lede">These terms govern your use of patiencetold.com. Read them before you use the site. By using it, you agree to them.</p>
+
+<nav class="toc" aria-label="Contents"><ol>
+<li><a href="#t1">About us</a></li>
+<li><a href="#t2">Acceptance</a></li>
+<li><a href="#t3">Using the site</a></li>
+<li><a href="#t4">Intellectual property</a></li>
+<li><a href="#t5">Portfolio work</a></li>
+<li><a href="#t6">Messages and submissions</a></li>
+<li><a href="#t7">No offer; project agreements</a></li>
+<li><a href="#t8">Third-party services</a></li>
+<li><a href="#t9">Disclaimer</a></li>
+<li><a href="#t10">Limitation of liability</a></li>
+<li><a href="#t11">Indemnity</a></li>
+<li><a href="#t12">Privacy</a></li>
+<li><a href="#t13">Governing law</a></li>
+<li><a href="#t14">General</a></li>
+<li><a href="#t15">Changes</a></li>
+<li><a href="#t16">Contact</a></li>
+</ol></nav>
+
+<h2 id="t1">1. About us</h2>
+<p>patiencetold.com is operated by Patience Told, a creative company based in Montréal, Québec, Canada ("Patience Told", "we", "us"). The site presents our work and gives you a way to contact us.</p>
+
+<h2 id="t2">2. Acceptance</h2>
+<p>These terms apply to everyone who visits the site. If you don't agree with them, don't use the site. If you use the site for a company or other organisation, you confirm you're authorised to accept these terms for it.</p>
+
+<h2 id="t3">3. Using the site</h2>
+<p>You may use the site for lawful, personal or business purposes connected with viewing our work or contacting us. You agree not to:</p>
+<ul>
+<li>break any law or infringe anyone's rights while using it</li>
+<li>copy, scrape or harvest content or data from it by automated means</li>
+<li>interfere with it, probe it for vulnerabilities, or try to get around its security</li>
+<li>send spam, malware or unlawful, abusive or misleading content through the contact form</li>
+<li>pass yourself off as someone else or misstate your connection to anyone</li>
+</ul>
+<p>We may restrict or block access to the site for anyone who breaks these terms.</p>
+
+<h2 id="t4">4. Intellectual property</h2>
+<p>The Patience Told name, logo, wordmark, site design, text and graphics belong to Patience Told and are protected by copyright and trademark law. Nothing in these terms gives you a licence to use them, apart from the limited right to view the site.</p>
+
+<h2 id="t5">5. Portfolio work</h2>
+<p>The videos and stills shown on the site belong to Patience Told, to the artists and clients they were made for, or to both, and are shown with permission. Music, performances, names and likenesses in them belong to their respective owners.</p>
+<p>You're welcome to watch, link to and share our work through the sharing tools of the platforms that host it. You may not download, re-upload, edit, sample or use any of it commercially without written permission from us and, where it applies, from the artist or rights holder.</p>
+<p>If you believe something on the site infringes your rights, write to us with the details and we'll look into it promptly.</p>
+
+<h2 id="t6">6. Messages and submissions</h2>
+<p>When you send us a message, you confirm that what you send is accurate and that you have the right to share it. Don't send confidential material, unreleased music or other sensitive files through the form unless we've asked for them.</p>
+<p>Ideas, pitches and treatments you send without our asking are received with no obligation of confidentiality, credit or payment, unless we agree otherwise in writing. We may already be working on something similar.</p>
+
+<h2 id="t7">7. No offer; project agreements</h2>
+<p>Nothing on the site is a quote, an offer or a commitment to take on a project. Sending a message or receiving a reply doesn't create a contract between us.</p>
+<p>Every project is covered by a separate written agreement that sets out the scope, the fee and payment schedule, the timeline, the deliverables, and who owns and may use the finished work. If that agreement and these terms conflict, the agreement prevails for that project.</p>
+
+<h2 id="t8">8. Third-party services</h2>
+<p>The site links to and embeds content from services run by other companies, including YouTube and Instagram. We don't control them and aren't responsible for their content, availability or practices. Your use of them is governed by their own terms and privacy policies.</p>
+
+<h2 id="t9">9. Disclaimer</h2>
+<p>The site and its content are provided "as is" and "as available". We work to keep them accurate and online, but we make no promise that the site will be uninterrupted, error-free or free of harmful components, or that the information on it is complete or current.</p>
+
+<h2 id="t10">10. Limitation of liability</h2>
+<p>To the fullest extent the law allows, Patience Told and the people who work with it aren't liable for any indirect, incidental or consequential loss, or for loss of data, revenue or profit, arising from your use of the site or your inability to use it.</p>
+<p>Nothing in these terms excludes or limits liability that can't be excluded or limited under the law that applies, including rights you have under Québec's Consumer Protection Act.</p>
+
+<h2 id="t11">11. Indemnity</h2>
+<p>If you break these terms and a third party makes a claim against us as a result, you agree to cover the reasonable costs and losses we incur because of that claim, to the extent the law allows.</p>
+
+<h2 id="t12">12. Privacy</h2>
+<p>Our <a href="#privacy">privacy policy</a> explains how we handle personal information.</p>
+
+<h2 id="t13">13. Governing law</h2>
+<p>These terms are governed by the laws of Québec and the federal laws of Canada that apply there. Any dispute about the site or these terms will be brought before the courts of the judicial district of Montréal, subject to any right you have as a consumer to bring it elsewhere.</p>
+
+<h2 id="t14">14. General</h2>
+<p>If a court finds part of these terms unenforceable, the rest stays in effect. If we don't enforce a term on one occasion, that isn't a waiver of it. These terms, with the policies they refer to, are the whole agreement between you and us about your use of the site.</p>
+
+<h2 id="t15">15. Changes</h2>
+<p>We may update these terms. The dates at the top show the current version. If you keep using the site after a change, you accept the updated terms.</p>
+
+<h2 id="t16">16. Contact</h2>
+<p>Questions about these terms go to <a href="mailto:karim@patiencetold.com">karim@patiencetold.com</a>.</p>
+</div>
+
+
+<footer>
+  <span>© 2026 Patience Told by Karim Elnaggar</span>
+  <nav aria-label="Legal">
+    <a href="#services">Services</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#terms">Terms</a>
+  </nav>
+</footer>
+
+<div class="viewer" id="viewer" role="dialog" aria-modal="true" aria-label="Video player">
+  <div class="viewer-bar">
+    <span class="viewer-title" id="vTitle"></span>
+    <button type="button" id="vClose">Close ✕</button>
+  </div>
+  <div class="viewer-stage">
+    <div class="frame" id="vFrame">
+      <iframe id="vIframe" title="Video" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      <div class="panel is-blocked">
+        <p>In-page playback is off in this preview.</p>
+        <a class="btn" id="vFallback" target="_blank" rel="noopener" href="#">Watch ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="viewer-nav">
+    <button type="button" id="vPrev">← Prev</button>
+    <a id="vOut" target="_blank" rel="noopener" href="#">Watch ↗</a>
+    <button type="button" id="vNext">Next →</button>
+  </div>
+</div>
+
+<script>
+// To add a video: add an entry here, then duplicate a tile in the page with the matching data-play index.
+var VIDEOS = [
+  { type: "yt", id: "TB2q0LTzim8", title: "Mamz, Blurry / House" },
+  { type: "yt", id: "1lY-K7u6tsA", title: "Mamz, TANA" },
+  { type: "ig", id: "DZcnIFzhulN", title: "New York City, a visual" },
+  { type: "ig", id: "DUpzRatDglE", title: "AlUla, a visual" },
+  { type: "ig", id: "DbzONS8o_Xv", title: "Blurry / House, behind the scenes" },
+  { type: "ig", id: "DYkn2hxNNli", title: "TANA, making of" }
+];
+function pageUrl(v) { return v.type === "yt" ? "https://www.youtube.com/watch?v=" + v.id : "https://www.instagram.com/reel/" + v.id + "/"; }
+function siteName(v) { return v.type === "yt" ? "YouTube" : "Instagram"; }
+
+// Thumbnails: each tile shows one real frame. Hovering plays a short muted preview clip of that video
+// (clips/v0.mp4 to clips/v5.mp4). On touch screens, where there is no hover, the clip plays while the tile is on screen.
+var consent = "yes";
+var viewer = document.getElementById("viewer"), frame = document.getElementById("vFrame"),
+    iframe = document.getElementById("vIframe"), current = 0, lastFocus = null;
+var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches, previews = [];
+document.querySelectorAll(".tile img.fr").forEach(function (still) {
+  var tile = still.parentNode, s = { tile: tile, video: null, missing: false, want: false };
+  function make() {
+    var v = document.createElement("video");
+    v.className = "pv"; v.muted = true; v.loop = true; v.playsInline = true; v.preload = "auto";
+    v.setAttribute("muted", ""); v.setAttribute("playsinline", ""); v.setAttribute("aria-hidden", "true");
+    v.addEventListener("error", function () { s.missing = true; v.remove(); s.video = null; });
+    v.addEventListener("playing", function () { if (s.want) v.classList.add("on"); });
+    v.src = "clips/v" + still.dataset.seq + ".mp4";
+    tile.insertBefore(v, still.nextSibling); s.video = v;
+  }
+  s.start = function () {
+    if (s.missing || reduceMotion || viewer.classList.contains("open")) return;
+    s.want = true; if (!s.video) make();
+    var pr = s.video.play(); if (pr && pr.catch) pr.catch(function () {});
+  };
+  s.stop = function () {
+    s.want = false; if (!s.video) return;
+    s.video.classList.remove("on"); s.video.pause(); try { s.video.currentTime = 0; } catch (err) {}
+  };
+  if (canHover) { tile.addEventListener("pointerenter", s.start); tile.addEventListener("pointerleave", s.stop); }
+  tile._pv = s; previews.push(s);
+});
+if (!canHover && "IntersectionObserver" in window) {
+  var pvIO = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { if (e.isIntersecting) e.target._pv.start(); else e.target._pv.stop(); });
+  }, { threshold: 0.75 });
+  previews.forEach(function (s) { pvIO.observe(s.tile); });
+}
+
+// Viewer
+function show(i) {
+  current = (i + VIDEOS.length) % VIDEOS.length;
+  var v = VIDEOS[current], out = "Watch on " + siteName(v) + " ↗";
+  document.getElementById("vTitle").textContent = v.title;
+  ["vOut", "vFallback"].forEach(function (id) {
+    var a = document.getElementById(id); a.href = pageUrl(v); a.textContent = out;
+  });
+  frame.classList.toggle("tall", v.type === "ig");
+  frame.classList.toggle("ask", consent !== "yes");
+  if (consent !== "yes") { iframe.removeAttribute("src"); return; }
+  iframe.src = v.type === "yt"
+    ? "https://www.youtube-nocookie.com/embed/" + v.id + "?autoplay=1&rel=0&modestbranding=1"
+    : "https://www.instagram.com/reel/" + v.id + "/embed/";
+}
+function openViewer(i) {
+  lastFocus = document.activeElement;
+  previews.forEach(function (s) { s.stop(); });
+  viewer.classList.add("open");
+  document.body.style.overflow = "hidden";
+  show(i);
+  document.getElementById("vClose").focus();
+}
+function closeViewer() {
+  viewer.classList.remove("open");
+  document.body.style.overflow = "";
+  iframe.removeAttribute("src");
+  if (lastFocus) lastFocus.focus();
+}
+document.querySelectorAll("[data-play]").forEach(function (el) {
+  el.addEventListener("click", function () { openViewer(+el.dataset.play); });
+});
+document.getElementById("vClose").addEventListener("click", closeViewer);
+document.getElementById("vPrev").addEventListener("click", function () { show(current - 1); });
+document.getElementById("vNext").addEventListener("click", function () { show(current + 1); });
+viewer.addEventListener("click", function (e) { if (e.target === viewer) closeViewer(); });
+document.addEventListener("keydown", function (e) {
+  if (!viewer.classList.contains("open")) return;
+  if (e.key === "Escape") closeViewer();
+  if (e.key === "ArrowLeft") show(current - 1);
+  if (e.key === "ArrowRight") show(current + 1);
+});
+
+// Where a host refuses embedded players, the viewer links out instead.
+document.addEventListener("securitypolicyviolation", function (e) {
+  var d = e.effectiveDirective || e.violatedDirective || "";
+  if (d.indexOf("frame-src") === 0 || d.indexOf("child-src") === 0) frame.classList.add("blocked");
+});
+
+// Contact form. Paste the Web3Forms access key into FORM_KEY and every message is delivered straight to the inbox.
+// If the service can't be reached, or FORM_KEY is empty, sending opens the visitor's email app with the message already written.
+var FORM_KEY = "a61ba571-e405-443b-8667-f5aad50e9e96";
+var FORM_ENDPOINT = FORM_KEY ? "https://api.web3forms.com/submit" : "";
+// Dropdowns: a button that opens a list. Arrow keys move, Enter or Space picks, Escape closes.
+document.querySelectorAll(".dd").forEach(function (dd) {
+  var btn = dd.querySelector(".dd-btn"), list = dd.querySelector(".dd-list"), val = dd.querySelector(".dd-val"),
+      input = dd.querySelector("input"), opts = Array.prototype.slice.call(list.children);
+  function open() { dd.classList.add("open"); list.hidden = false; btn.setAttribute("aria-expanded", "true"); (list.querySelector('[aria-selected="true"]') || opts[0]).focus(); }
+  function close(refocus) { dd.classList.remove("open"); list.hidden = true; btn.setAttribute("aria-expanded", "false"); if (refocus) btn.focus(); }
+  function pick(o) {
+    opts.forEach(function (x) { x.setAttribute("aria-selected", x === o ? "true" : "false"); });
+    input.value = o.textContent; val.textContent = o.textContent; dd.classList.add("filled"); close(true);
+  }
+  btn.addEventListener("click", function () { if (dd.classList.contains("open")) close(); else open(); });
+  btn.addEventListener("keydown", function (e) { if (e.key === "ArrowDown" || e.key === "ArrowUp") { e.preventDefault(); open(); } });
+  opts.forEach(function (o, i) {
+    o.addEventListener("click", function () { pick(o); });
+    o.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(o); }
+      else if (e.key === "ArrowDown") { e.preventDefault(); opts[Math.min(opts.length - 1, i + 1)].focus(); }
+      else if (e.key === "ArrowUp") { e.preventDefault(); opts[Math.max(0, i - 1)].focus(); }
+      else if (e.key === "Escape") { close(true); }
+      else if (e.key === "Tab") { close(); }
+    });
+  });
+  document.addEventListener("click", function (e) { if (!dd.contains(e.target)) close(); });
+  dd.reset = function () { opts.forEach(function (x) { x.setAttribute("aria-selected", "false"); }); input.value = ""; val.textContent = btn.id === "f-industry" ? "Industry" : "Project type"; dd.classList.remove("filled"); };
+});
+
+var form = document.getElementById("form"), statusEl = document.getElementById("f-status");
+function say(msg, bad) { statusEl.textContent = msg; statusEl.classList.toggle("bad", !!bad); }
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+  var f = form.elements;
+  var d = { name: f.name.value.trim(), email: f.email.value.trim(), industry: f.industry.value, type: f.type.value, message: f.message.value.trim() };
+  if (!d.name || !d.email || !d.industry || !d.type || !d.message) { say("Fill in every field first.", true); return; }
+  if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email)) { say("That email doesn't look right. Check it and try again.", true); return; }
+  function byEmail(note) {
+    var body = d.message + "\n\nIndustry: " + d.industry + "\nProject type: " + d.type + "\n\n" + d.name + "\n" + d.email;
+    window.location.href = "mailto:karim@patiencetold.com?subject=" + encodeURIComponent(d.type + " inquiry from " + d.name) + "&body=" + encodeURIComponent(body);
+    say(note);
+  }
+  if (FORM_ENDPOINT) {
+    say("Sending…");
+    var btn = form.querySelector('button[type="submit"]'); btn.disabled = true;
+    var payload = { access_key: FORM_KEY, subject: d.type + " inquiry from " + d.name, from_name: "Patience Told website", botcheck: "",
+                    name: d.name, email: d.email, industry: d.industry, project_type: d.type, message: d.message };
+    // Sent as ordinary form fields, the same way a plain HTML form would, so no browser pre-check is needed.
+    var fd = new FormData(); Object.keys(payload).forEach(function (k) { fd.append(k, payload[k]); });
+    fetch(FORM_ENDPOINT, { method: "POST", headers: { "Accept": "application/json" }, body: fd })
+      .then(function (r) { return r.json().then(function (j) { if (!r.ok || j.success === false) throw new Error(); }); })
+      .then(function () { btn.disabled = false; form.reset(); document.querySelectorAll(".dd").forEach(function (x) { x.reset(); }); say("Message sent. We'll be in touch soon."); })
+      .catch(function () {
+        btn.disabled = false;
+        var live = /(^|\.)patiencetold\.com$/.test(location.hostname);
+        byEmail(live ? "Couldn't send from here, so your email app should open with this message ready to send."
+                     : "This preview can't send messages. On patiencetold.com this goes straight to the inbox.");
+      });
+    return;
+  }
+  byEmail("Your email app should open with this message ready to send.");
+});
+</script>
+<script>
+// ---- Views and in-page links. The address is never changed for sections of the home page, so nothing can
+// send a fresh load anywhere but the top. Services, Privacy and Terms swap in place; a direct link such as
+// /#services still opens that page. ----
+(function () {
+  var views = Array.prototype.slice.call(document.querySelectorAll(".view")), home = document.getElementById("top");
+  var PAGES = { services: 1, privacy: 1, terms: 1 }, shown = home;
+  try { history.scrollRestoration = "manual"; } catch (err) {}
+  function show(view, target, smooth) {
+    var changed = view !== shown; shown = view;
+    views.forEach(function (v) { v.hidden = v !== view; });
+    if (target && target !== view) target.scrollIntoView({ behavior: changed || !smooth ? "instant" : "smooth", block: "start" });
+    else window.scrollTo({ top: 0, behavior: changed || !smooth ? "instant" : "smooth" });
+  }
+  function go(id, smooth, record) {
+    var view = home, target = null;
+    if (PAGES[id]) view = document.getElementById("page-" + id);
+    else if (id && id !== "top") { target = document.getElementById(id); if (!target) return false; view = target.closest(".view") || home; }
+    var changed = view !== shown;
+    show(view, target, smooth);
+    if (record && changed) {
+      var st = { view: view === home ? "" : view.id };
+      // Keep the address in step with the page shown, so a refresh or a shared link lands in the same place.
+      var url = location.pathname + location.search + (view === home ? "" : "#" + view.id.replace(/^page-/, ""));
+      try { history.pushState(st, "", url); } catch (err) { try { history.pushState(st, ""); } catch (err2) {} }
+    }
+    return true;
+  }
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest ? e.target.closest('a[href^="#"]') : null;
+    if (!a || e.defaultPrevented) return;
+    var id = decodeURIComponent(a.getAttribute("href").slice(1));
+    if (go(id, true, true)) e.preventDefault();
+  });
+  window.addEventListener("popstate", function (e) {
+    var id = e.state && e.state.view, view = id ? document.getElementById(id) : home;
+    show(view || home, null, false);
+  });
+  window.addEventListener("hashchange", function () {
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (PAGES[h]) go(h, false, false);
+  });
+  // First load.
+  var h0 = decodeURIComponent(location.hash.slice(1));
+  if (PAGES[h0]) go(h0, false, false);
+  else {
+    if (h0) { try { history.replaceState(null, "", location.pathname + location.search); } catch (err) {} try { if (location.hash) location.hash = ""; } catch (err) {} }
+    show(home, null, false);
+  }
+  window.__ptHomeShown = function () { return shown === home; };
+})();
+
+// ---- Wordmark: each letter rises in after the curtain lifts. ----
+(function () {
+  var h = document.querySelector(".name"); if (!h) return;
+  var dot = h.querySelector("i"), text = h.firstChild && h.firstChild.nodeType === 3 ? h.firstChild.textContent : "";
+  if (!text) return;
+  h.setAttribute("aria-label", text + (dot ? dot.textContent : ""));
+  var frag = document.createDocumentFragment(), n = 0;
+  text.split("").forEach(function (c) {
+    var s = document.createElement("span"); s.className = c === " " ? "ch sp" : "ch"; s.textContent = c === " " ? " " : c;
+    s.style.setProperty("--i", n++); s.setAttribute("aria-hidden", "true"); frag.appendChild(s);
+  });
+  h.replaceChild(frag, h.firstChild);
+  if (dot) { dot.className = "ch"; dot.style.setProperty("--i", n); dot.setAttribute("aria-hidden", "true"); }
+})();
+
+// ---- Reveal on scroll ----
+(function () {
+  if (!("IntersectionObserver" in window)) return;
+  document.documentElement.classList.add("js");
+  var groups = [".hero-side", ".logo-disc", ".band-head", ".work > li", ".reel", ".who > div", ".who-cta", ".about-c > *", ".contact > *", ".doc .card", ".doc .steps > li"];
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  groups.forEach(function (sel) {
+    document.querySelectorAll(sel).forEach(function (el) {
+      var i = Array.prototype.indexOf.call(el.parentNode.children, el);
+      el.classList.add("reveal"); el.style.setProperty("--d", Math.min(i, 4) * 80 + "ms"); io.observe(el);
+    });
+  });
+})();
+
+</script>
+<script>
+// ---- Intro: a rhodium zipper is set into the lips along the curve of the mouth. Drag the pull across to
+// open them and enter. Tapping the pull, pressing Enter, or Skip also work. ----
+(function () {
+  var root = document.documentElement, zip = document.getElementById("zip");
+  var startedHome = !/^#(services|privacy|terms)$/.test(location.hash);
+  function done() { root.classList.remove("zip-lock"); root.classList.add("ready"); if (zip && zip.parentNode) zip.parentNode.removeChild(zip); }
+  function toTop() { if (startedHome && (!window.__ptHomeShown || window.__ptHomeShown())) window.scrollTo({ top: 0, behavior: "instant" }); }
+  if (!zip) { root.classList.add("ready"); return; }
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { done(); return; }
+  try {
+    var stage = document.getElementById("zipStage"), logo = zip.querySelector(".zip-logo"),
+        tape = zip.querySelector(".zip-tape"), tctx = tape.getContext("2d"),
+        canvas = zip.querySelector(".zip-teeth"), ctx = canvas.getContext("2d"), pull = document.getElementById("zipPull"),
+        tab = zip.querySelector(".zip-tab"), hint = zip.querySelector(".zip-hint");
+    // The mouth inside the logo artwork, as fractions of its width and height: left corner, right corner,
+    // how far the line dips in the middle, and half the height of the mouth.
+    var RATIO = 900 / 768, AX = 0.215, AY = 0.488, BX = 0.795, BY = 0.54, DIP = 0.036, HALF = 0.049;
+    var W, H, A, B, M, g, unit, LEN, table = [], p = 0, dragging = false, startX = 0, startP = 0, moved = 0, anim = 0, finished = false, onPull = false;
+    root.classList.add("zip-lock"); zip.classList.add("idle");
+    window.addEventListener("scroll", function pin() { if (finished) window.removeEventListener("scroll", pin); else toTop(); }, { passive: true });
+
+    function pt(t) { var u = 1 - t; return { x: u * u * A.x + 2 * u * t * M.x + t * t * B.x, y: u * u * A.y + 2 * u * t * M.y + t * t * B.y }; }
+    function frame(t) {   // point on the mouth line, its direction, and the normal pointing down
+      var q = pt(t), dx = 2 * (1 - t) * (M.x - A.x) + 2 * t * (B.x - M.x), dy = 2 * (1 - t) * (M.y - A.y) + 2 * t * (B.y - M.y), l = Math.sqrt(dx * dx + dy * dy) || 1;
+      return { x: q.x, y: q.y, nx: -dy / l, ny: dx / l, a: Math.atan2(dy, dx) };
+    }
+    function tAt(d) {     // curve parameter at a distance along the line
+      for (var i = 1; i < table.length; i++) if (table[i].d >= d) { var a = table[i - 1], b = table[i]; return a.t + (b.t - a.t) * (d - a.d) / ((b.d - a.d) || 1); }
+      return 1;
+    }
+    function gap(t, hh) { if (t >= p || p <= 0) return 0; var s = t / p; return hh * 4 * s * (1 - s); }
+
+    function layout() {
+      var dpr = Math.min(3, window.devicePixelRatio || 1);
+      W = window.innerWidth; H = window.innerHeight;
+      [[canvas, ctx], [tape, tctx]].forEach(function (c) { c[0].width = Math.round(W * dpr); c[0].height = Math.round(H * dpr); c[1].setTransform(dpr, 0, 0, dpr, 0, 0); });
+      var lw = Math.min(W * 0.74, H * 0.52 * RATIO, 440), lh = lw / RATIO, left = (W - lw) / 2, top = Math.round(H * 0.46 - lh / 2);
+      A = { x: left + AX * lw, y: top + AY * lh }; B = { x: left + BX * lw, y: top + BY * lh };
+      M = { x: (A.x + B.x) / 2, y: (A.y + B.y) / 2 + DIP * lw }; g = HALF * lw; unit = lw / 440;
+      logo.style.cssText = "left:" + left + "px;top:" + top + "px;width:" + lw + "px";
+      hint.style.top = Math.min(H - 40, top + lh + Math.max(26, H * 0.05)) + "px";
+      table = [{ t: 0, d: 0 }]; var prev = pt(0), d = 0;
+      for (var i = 1; i <= 120; i++) { var q = pt(i / 120); d += Math.sqrt(Math.pow(q.x - prev.x, 2) + Math.pow(q.y - prev.y, 2)); table.push({ t: i / 120, d: d }); prev = q; }
+      LEN = d;
+      drawTape(); draw();
+    }
+    // The fabric tape fills the mouth so the lips close onto the zipper.
+    function line(c, off) { c.beginPath(); for (var i = 0; i <= 60; i++) { var f = frame(i / 60); if (i) c.lineTo(f.x + f.nx * off, f.y + f.ny * off); else c.moveTo(f.x + f.nx * off, f.y + f.ny * off); } }
+    function drawTape() {
+      var c = tctx; c.clearRect(0, 0, W, H); c.lineCap = "round"; c.lineJoin = "round";
+      c.strokeStyle = "#000"; c.lineWidth = g * 2.7; line(c, 0); c.stroke();
+      c.strokeStyle = "#131417"; c.lineWidth = g * 2.25; line(c, 0); c.stroke();
+      c.strokeStyle = "#1d1f24"; c.lineWidth = g * 1.25; line(c, 0); c.stroke();
+      c.lineCap = "butt"; c.strokeStyle = "#4b5059"; c.lineWidth = Math.max(1, unit); c.setLineDash([4 * unit, 4 * unit]);
+      line(c, -g * 0.86); c.stroke(); line(c, g * 0.86); c.stroke(); c.setLineDash([]);
+    }
+    function tooth(f, off, even) {
+      var tw = 5.6 * unit, th = 7 * unit, r = 1.5 * unit;
+      ctx.save(); ctx.translate(f.x + f.nx * off, f.y + f.ny * off); ctx.rotate(f.a);
+      ctx.shadowColor = "rgba(0,0,0,.7)"; ctx.shadowBlur = 2.5 * unit; ctx.shadowOffsetY = 1.2 * unit;
+      var y0 = even ? -th * 0.78 : -th * 0.22, grd = ctx.createLinearGradient(0, y0, 0, y0 + th);
+      grd.addColorStop(0, "#ffffff"); grd.addColorStop(0.24, "#e9eef4"); grd.addColorStop(0.5, "#8d96a3"); grd.addColorStop(0.62, "#f5f8fb"); grd.addColorStop(1, "#a6aeba");
+      ctx.fillStyle = grd; ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(-tw / 2, y0, tw, th, r); else ctx.rect(-tw / 2, y0, tw, th);
+      ctx.fill(); ctx.shadowColor = "transparent";
+      ctx.fillStyle = "rgba(255,255,255,.95)"; ctx.fillRect(-tw / 2 + 0.9 * unit, y0 + 0.9 * unit, tw - 1.8 * unit, 1.1 * unit);
+      ctx.restore();
+    }
+    function stop(t) {
+      var f = frame(t); ctx.save(); ctx.translate(f.x, f.y); ctx.rotate(f.a);
+      var w = 4 * unit, h = 13 * unit, grd = ctx.createLinearGradient(0, -h / 2, 0, h / 2);
+      grd.addColorStop(0, "#fff"); grd.addColorStop(0.5, "#8d96a3"); grd.addColorStop(0.62, "#f5f8fb"); grd.addColorStop(1, "#a6aeba");
+      ctx.fillStyle = grd; ctx.beginPath();
+      if (ctx.roundRect) ctx.roundRect(t ? 0 : -w, -h / 2, w, h, 1.5 * unit); else ctx.rect(t ? 0 : -w, -h / 2, w, h);
+      ctx.fill(); ctx.restore();
+    }
+    function draw() {
+      var hh = g * 0.9 * Math.sqrt(p), i, f, path = "", up = [], down = [];
+      if (p > 0.004) {
+        for (i = 0; i <= 28; i++) { var t = p * i / 28; f = frame(t); var k = gap(t, hh); up.push((f.x - f.nx * k).toFixed(1) + " " + (f.y - f.ny * k).toFixed(1)); down.push((f.x + f.nx * k).toFixed(1) + " " + (f.y + f.ny * k).toFixed(1)); }
+        path = 'path(evenodd,"M0 0H' + W + "V" + H + "H0Z M" + up.join(" L") + " L" + down.reverse().join(" L") + 'Z")';
+      }
+      stage.style.clipPath = path || "none";
+      f = frame(p);
+      pull.style.transform = "translate(" + f.x + "px," + f.y + "px) rotate(" + f.a + "rad) scale(" + Math.max(0.7, unit) + ")";
+      ctx.clearRect(0, 0, W, H);
+      stop(0); stop(1);
+      var pitch = 7.8 * unit, n = Math.floor(LEN / pitch), pad = (LEN - n * pitch) / 2 + pitch / 2;
+      for (i = 0; i < n; i++) {
+        var tt = tAt(pad + i * pitch), even = i % 2 === 0, k2 = gap(tt, hh);
+        tooth(frame(tt), tt < p ? (even ? -k2 : k2) : 0, even);
+      }
+    }
+    // Finale: the intro scales up from the mouth until the opening swallows the screen.
+    function finish() {
+      if (finished) return; finished = true;
+      cancelAnimationFrame(anim); p = 1; draw();
+      zip.classList.remove("idle"); zip.classList.add("open");
+      var c = pt(0.5), far = Math.sqrt(Math.pow(Math.max(c.x, W - c.x), 2) + Math.pow(Math.max(c.y, H - c.y), 2));
+      stage.style.transformOrigin = c.x + "px " + c.y + "px";
+      stage.style.transition = "transform 1.25s cubic-bezier(.6,0,.9,.35)";
+      requestAnimationFrame(function () { stage.style.transform = "scale(" + Math.max(8, far / (g * 0.45)) * 1.15 + ")"; });
+      toTop();
+      setTimeout(function () { root.classList.remove("zip-lock"); root.classList.add("ready"); toTop(); }, 800);
+      setTimeout(done, 1300);
+    }
+    function glide(to, ms, then) {
+      cancelAnimationFrame(anim);
+      var from = p, t0 = performance.now();
+      (function step() {
+        var k = Math.min(1, (performance.now() - t0) / ms), e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
+        p = from + (to - from) * e; draw();
+        if (k < 1) anim = requestAnimationFrame(step); else if (then) then();
+      })();
+    }
+    function unzip() { zip.classList.remove("idle"); glide(1, 900 * (1 - p) + 250, finish); }
+    zip.addEventListener("pointerdown", function (e) {
+      if (finished || e.target.id === "zipSkip") return;
+      dragging = true; moved = 0; startX = e.clientX; startP = p; onPull = !!(e.target.closest && e.target.closest(".zip-pull"));
+      cancelAnimationFrame(anim); zip.classList.remove("idle"); zip.classList.add("dragging");
+      try { zip.setPointerCapture(e.pointerId); } catch (err) {}
+    });
+    zip.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      var dx = e.clientX - startX; moved = Math.max(moved, Math.abs(dx));
+      p = Math.max(0, Math.min(1, startP + dx / (B.x - A.x)));
+      tab.style.transform = "rotate(" + Math.max(-30, Math.min(30, -(e.movementX || 0) * 2.2)) + "deg)";
+      draw();
+      if (p >= 1) { dragging = false; zip.classList.remove("dragging"); finish(); }
+    });
+    function release(e) {
+      if (!dragging) return; dragging = false; zip.classList.remove("dragging"); tab.style.transform = "";
+      if (moved < 6 && onPull) unzip();
+      else if (p > 0.5) unzip();
+      else glide(0, 420, function () { zip.classList.add("idle"); });
+    }
+    zip.addEventListener("pointerup", release);
+    zip.addEventListener("pointercancel", release);
+    pull.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " " || e.key === "ArrowRight") { e.preventDefault(); unzip(); } });
+    document.getElementById("zipSkip").addEventListener("click", function () { zip.classList.remove("idle"); glide(1, 300, finish); });
+    window.addEventListener("resize", function () { if (!finished) layout(); });
+    layout(); if (!logo.complete) logo.addEventListener("load", layout);
+  } catch (err) { done(); }
+})();
+</script>
+</body>
+</html>
