@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Patience Told | Music Video Production in Montréal</title>
-<meta name="description" content="Patience Told is a Montréal creative company making music videos and visuals for artists. Direction, videography, production and design by Karim Elnaggar. Open to collabs.">
+<title>Patience Told | Music Videos &amp; Creative Production in Montréal</title>
+<meta name="description" content="Patience Told is a Montréal-based creative company creating music videos, artist visuals and branded content. Direction, videography, editing and design.">
 <link rel="canonical" href="https://patiencetold.com/">
 <meta name="robots" content="index, follow">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Patience Told">
-<meta property="og:title" content="Patience Told | Music Video Production in Montréal">
-<meta property="og:description" content="Music videos and visuals for artists, made in Montréal. Direction, videography, production and design.">
+<meta property="og:title" content="Patience Told | Music Videos &amp; Creative Production in Montréal">
+<meta property="og:description" content="Music videos, artist visuals and branded content, from concept to final cut. Direction and production in Montréal.">
 <meta property="og:url" content="https://patiencetold.com/">
 <meta property="og:image" content="https://patiencetold.com/logo.png">
 <meta property="og:locale" content="en_CA">
@@ -24,13 +24,21 @@
   "url": "https://patiencetold.com/",
   "logo": "https://patiencetold.com/logo.png",
   "image": "https://patiencetold.com/logo.png",
-  "description": "Creative company in Montréal making music videos and visuals for artists. Direction, videography, production and design.",
+  "description": "Montréal-based creative company producing music videos, artist visuals and branded content. Direction, videography, editing and design.",
   "email": "karim@patiencetold.com",
   "address": { "@type": "PostalAddress", "addressLocality": "Montréal", "addressRegion": "QC", "addressCountry": "CA" },
   "areaServed": [{ "@type": "City", "name": "Montréal" }, { "@type": "AdministrativeArea", "name": "Québec" }],
   "founder": { "@type": "Person", "name": "Karim Elnaggar", "jobTitle": "Director and Editor" },
   "knowsAbout": ["Music video production", "Videography", "Video direction", "Video editing", "Creative direction", "Design"],
   "sameAs": ["https://www.instagram.com/patiencetold/", "https://www.instagram.com/onlykarimhere/"]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Patience Told",
+  "url": "https://patiencetold.com/"
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -234,6 +242,10 @@ html.zip-lock,html.zip-lock body{overflow:hidden}
 @media (max-width:460px){
   .brand{display:none}
   .top{justify-content:center}
+}
+@media (max-width:380px){
+  .top nav{gap:7px}
+  .top nav a{font-size:10.5px;letter-spacing:.04em}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -1136,6 +1148,7 @@ form.addEventListener("submit", function (e) {
   // First load.
   var h0 = decodeURIComponent(location.hash.slice(1));
   if (PAGES[h0]) go(h0, false, false);
+  else if (h0 && document.getElementById(h0)) go(h0, false, false);
   else {
     if (h0) { try { history.replaceState(null, "", location.pathname + location.search); } catch (err) {} try { if (location.hash) location.hash = ""; } catch (err) {} }
     show(home, null, false);
@@ -1181,8 +1194,13 @@ form.addEventListener("submit", function (e) {
 (function () {
   var root = document.documentElement, zip = document.getElementById("zip");
   var startedHome = !/^#(services|privacy|terms)$/.test(location.hash);
-  function done() { root.classList.remove("zip-lock"); root.classList.add("ready"); if (zip && zip.parentNode) zip.parentNode.removeChild(zip); }
-  function toTop() { if (startedHome && (!window.__ptHomeShown || window.__ptHomeShown())) window.scrollTo({ top: 0, behavior: "instant" }); }
+  var deepLink = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  function done() {
+    root.classList.remove("zip-lock"); root.classList.add("ready");
+    if (zip && zip.parentNode) zip.parentNode.removeChild(zip);
+    if (deepLink) requestAnimationFrame(function () { deepLink.scrollIntoView({ behavior: "instant", block: "start" }); });
+  }
+  function toTop() { if (!deepLink && startedHome && (!window.__ptHomeShown || window.__ptHomeShown())) window.scrollTo({ top: 0, behavior: "instant" }); }
   if (!zip) { root.classList.add("ready"); return; }
   if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) { done(); return; }
   try {
